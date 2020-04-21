@@ -1,0 +1,1401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31F06E75-94EA-4229-A394-0C6581371116}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>xpeg_count_project.My.MyApplication</StartupObject>
+    <RootNamespace>xpeg_count_project</RootNamespace>
+    <AssemblyName>xpeg_count_project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>xpeg_count_project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>xpeg_count_project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CountIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BlockInformationIconsResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlockInformationIconsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\ChangeDateDialog.Designer.vb">
+      <DependentUpon>ChangeDateDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\ChangeDateDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\DeleteExpenseConfirmDialog.Designer.vb">
+      <DependentUpon>DeleteExpenseConfirmDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\DeleteExpenseConfirmDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\Plots\SimplePayPlotDialog.Designer.vb">
+      <DependentUpon>SimplePayPlotDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Plots\SimplePayPlotDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstUse\SlideShowForm.Designer.vb">
+      <DependentUpon>SlideShowForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FirstUse\SlideShowForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstUse\SlidesPages\SlideShow01.Designer.vb">
+      <DependentUpon>SlideShow01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FirstUse\SlidesPages\SlideShow01.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstUse\SlidesPages\SlideShow02.Designer.vb">
+      <DependentUpon>SlideShow02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FirstUse\SlidesPages\SlideShow02.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstUse\SlidesPages\SlideShow03.Designer.vb">
+      <DependentUpon>SlideShow03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FirstUse\SlidesPages\SlideShow03.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstUse\SlidesPages\SlideShow04.Designer.vb">
+      <DependentUpon>SlideShow04.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FirstUse\SlidesPages\SlideShow04.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\LabelInControl.Designer.vb">
+      <DependentUpon>LabelInControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\LabelInControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SlidesImages.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SlidesImages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="XpegCountSettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>XpegCountSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ContextMenuStatusPlotIconsResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContextMenuStatusPlotIconsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Count Tools\CountCategorySelector.Designer.vb">
+      <DependentUpon>CountCategorySelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Count Tools\CountCategorySelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Count Tools\CountLoading.Designer.vb">
+      <DependentUpon>CountLoading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Count Tools\CountLoading.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Count Tools\CountPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Count Tools\CountTextBox.Designer.vb">
+      <DependentUpon>CountTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Count Tools\CountTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreditCards\NewCreditCardDialog.Designer.vb">
+      <DependentUpon>NewCreditCardDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreditCards\NewCreditCardDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardtIconsResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardtIconsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FeedBackDialog.Designer.vb">
+      <DependentUpon>FeedBackDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FeedBackDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SelectColorDialog.Designer.vb">
+      <DependentUpon>SelectColorDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SelectColorDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SelectCreditCardDialog.Designer.vb">
+      <DependentUpon>SelectCreditCardDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SelectCreditCardDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SelectExpenseCategoryDialog.Designer.vb">
+      <DependentUpon>SelectExpenseCategoryDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SelectExpenseCategoryDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SelectIconDialog.Designer.vb">
+      <DependentUpon>SelectIconDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SelectIconDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\ChangeNameDialog.Designer.vb">
+      <DependentUpon>ChangeNameDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\ChangeNameDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\NewCommentDialog.Designer.vb">
+      <DependentUpon>NewCommentDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\NewCommentDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\CustomQuickMenuDialog.Designer.vb">
+      <DependentUpon>CustomQuickMenuDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\CustomQuickMenuDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\ListItems\BlockInformationsControl.Designer.vb">
+      <DependentUpon>BlockInformationsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\ListItems\BlockInformationsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expense\ListItems\CommentItemControl.Designer.vb">
+      <DependentUpon>CommentItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\ListItems\CommentItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expense\ListItems\CreditCardItemList.Designer.vb">
+      <DependentUpon>CreditCardItemList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\ListItems\CreditCardItemList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expense\ListItems\ExpenseBlockItemControl.Designer.vb">
+      <DependentUpon>ExpenseBlockItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\ListItems\ExpenseBlockItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expense\ListItems\ExpenseCategoryItemControl.Designer.vb">
+      <DependentUpon>ExpenseCategoryItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\ListItems\ExpenseCategoryItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expense\ListItems\ExpenseCategoryListItemControl.Designer.vb">
+      <DependentUpon>ExpenseCategoryListItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\ListItems\ExpenseCategoryListItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expense\ListItems\HistoricPaymentItemControl.Designer.vb">
+      <DependentUpon>HistoricPaymentItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\ListItems\HistoricPaymentItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expense\ListItems\PlotItemControl.Designer.vb">
+      <DependentUpon>PlotItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\ListItems\PlotItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Expense\Plots\ViewCommentDialog.Designer.vb">
+      <DependentUpon>ViewCommentDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Plots\ViewCommentDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\Plots\AddNewPlotDialog.Designer.vb">
+      <DependentUpon>AddNewPlotDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Plots\AddNewPlotDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\Plots\PayPlotDialog.Designer.vb">
+      <DependentUpon>PayPlotDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Plots\PayPlotDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\Plots\ViewPlotSelectedDialog.Designer.vb">
+      <DependentUpon>ViewPlotSelectedDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Plots\ViewPlotSelectedDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\ViewExpenseForm.Designer.vb">
+      <DependentUpon>ViewExpenseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\ViewExpenseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiltersHome.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FiltersHome.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FirstUseDialog.Designer.vb">
+      <DependentUpon>FirstUseDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FirstUseDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStyleImagesResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormStyleImagesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Home Form\DashboardsGraphicsDialog.Designer.vb">
+      <DependentUpon>DashboardsGraphicsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home Form\DashboardsGraphicsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home Form\Filters\FilterBlockContainer.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Home Form\Pages\HomeCount_DashboardPage_Control.Designer.vb">
+      <DependentUpon>HomeCount_DashboardPage_Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home Form\Pages\HomeCount_DashboardPage_Control.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home Form\ViewModes\BlocksViewModeHome.Designer.vb">
+      <DependentUpon>BlocksViewModeHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home Form\ViewModes\BlocksViewModeHome.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home Form\ViewModes\CalendarViewModeHome.Designer.vb">
+      <DependentUpon>CalendarViewModeHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home Form\ViewModes\CalendarViewModeHome.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home Form\ViewModes\MonthsLabelsForCalendarMode.Designer.vb">
+      <DependentUpon>MonthsLabelsForCalendarMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home Form\ViewModes\MonthsLabelsForCalendarMode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces Class\DashboardProgressGraphicClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Interfaces Class\MDComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Interfaces Class\Themes Base\LogInThemeModule.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\MetroDiskThemeClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Interface\CategoryIconList.Designer.vb">
+      <DependentUpon>CategoryIconList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CategoryIconList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\CategoryIconsSeparatorControl.Designer.vb">
+      <DependentUpon>CategoryIconsSeparatorControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CategoryIconsSeparatorControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ColorSelectItemControl.Designer.vb">
+      <DependentUpon>ColorSelectItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ColorSelectItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces Class\DashboardProgressBarClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Interface\IconSelectItemControl.Designer.vb">
+      <DependentUpon>IconSelectItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IconSelectItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\LogItemList.Designer.vb">
+      <DependentUpon>LogItemList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\LogItemList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\MenuHome\MenuItemCount.Designer.vb">
+      <DependentUpon>MenuItemCount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MenuHome\MenuItemCount.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\QuickOptionExpenseButton.Designer.vb">
+      <DependentUpon>QuickOptionExpenseButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\QuickOptionExpenseButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\SelectViewFilterItemListControl.Designer.vb">
+      <DependentUpon>SelectViewFilterItemListControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\SelectViewFilterItemListControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\TabPage\TabButtonsContainer.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Interface\TabPage\TabPageButton.Designer.vb">
+      <DependentUpon>TabPageButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\TabPage\TabPageButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoadingIconsResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoadingIconsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCountIconsResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuCountIconsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuHome.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuHome.resx</DependentUpon>
+    </Compile>
+    <Compile Include="HelpCenter\HelpCenterForm.Designer.vb">
+      <DependentUpon>HelpCenterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpCenter\HelpCenterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpCenter\ListItens\QuestionHelpItemList.Designer.vb">
+      <DependentUpon>QuestionHelpItemList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpCenter\ListItens\QuestionHelpItemList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HelpCenter\ListItens\HelpCategoryItemList.Designer.vb">
+      <DependentUpon>HelpCategoryItemList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpCenter\ListItens\HelpCategoryItemList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HelpCenter\ListItens\TopicItemList.Designer.vb">
+      <DependentUpon>TopicItemList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpCenter\ListItens\TopicItemList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HelpCenter\Pages\ViewQuestionsOfTopicSelectedControl.Designer.vb">
+      <DependentUpon>ViewQuestionsOfTopicSelectedControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpCenter\Pages\ViewQuestionsOfTopicSelectedControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HelpCenter\Pages\ViewTopicsOfCategorySelectedControl.Designer.vb">
+      <DependentUpon>ViewTopicsOfCategorySelectedControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpCenter\Pages\ViewTopicsOfCategorySelectedControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HelpCenter\ViewHelpDialog.Designer.vb">
+      <DependentUpon>ViewHelpDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpCenter\ViewHelpDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informations\DonateDialog.Designer.vb">
+      <DependentUpon>DonateDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informations\DonateDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="system\CountModuleCenter.vb" />
+    <Compile Include="system\CountModuleFunctions.vb" />
+    <Compile Include="system\CreditCards\CreditCards_CountSystem.vb" />
+    <Compile Include="system\CreditCards\CreditCard_CountSystem.vb" />
+    <Compile Include="system\Dashboard\Dashboard_CountSystem.vb" />
+    <Compile Include="system\Expenses\Expenses_CountSystem.vb" />
+    <Compile Include="system\Filters\Filters_CountSystem.vb" />
+    <Compile Include="system\Plots\HistoricPayment_CountSystem.vb" />
+    <Compile Include="system\Plots\Plots_CountSystem.vb" />
+    <Compile Include="system\Plots\Plot_CountSystem.vb" />
+    <Compile Include="system\Expenses\ExpenseValues_CountSystem.vb" />
+    <Compile Include="system\Expenses\Expense_CountSystem.vb" />
+    <Compile Include="system\LanguageModule.vb" />
+    <Compile Include="system\Settings\CustomizationSettings_CountSystem.vb" />
+    <Compile Include="system\Settings\ExpensesSettings_CountSystem.vb" />
+    <Compile Include="system\Settings\GeneralSettings_CountSystem.vb" />
+    <Compile Include="system\Settings\IconsSettings_CountSystem.vb" />
+    <Compile Include="system\Settings\LanguagesSettings_CountSystem.vb" />
+    <Compile Include="system\Settings\Settings_CountSystem.vb" />
+    <Compile Include="system\Software\INI_CountSystem.vb" />
+    <Compile Include="system\Software\Software_CountSystem.vb" />
+    <Compile Include="system\system\SystemClass_Dashboard.vb" />
+    <Compile Include="system\system\SystemClass_Settings.vb" />
+    <Compile Include="system\_\LVFrame.vb" />
+    <Compile Include="Informations\AboutSoftwareDialog.Designer.vb">
+      <DependentUpon>AboutSoftwareDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informations\AboutSoftwareDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\ListItems\ExpensePlotItemControl.Designer.vb">
+      <DependentUpon>ExpensePlotItemControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\ListItems\ExpensePlotItemControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Software Settings\SettingsCountDialog.Designer.vb">
+      <DependentUpon>SettingsCountDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Software Settings\SettingsCountDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\ChangeMaturityDayDialog.Designer.vb">
+      <DependentUpon>ChangeMaturityDayDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\ChangeMaturityDayDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\ChangePlotValueDialog.Designer.vb">
+      <DependentUpon>ChangePlotValueDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\ChangePlotValueDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\DescriptionPlotDialog.Designer.vb">
+      <DependentUpon>DescriptionPlotDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\Change Values Dialogs\DescriptionPlotDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense\NewExpenseDialog.Designer.vb">
+      <DependentUpon>NewExpenseDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expense\NewExpenseDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MenuItemListControl.Designer.vb">
+      <DependentUpon>MenuItemListControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MenuItemListControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informations\NewsInSoftwareDialog.Designer.vb">
+      <DependentUpon>NewsInSoftwareDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informations\NewsInSoftwareDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="system\SoftwareModule.vb" />
+    <Compile Include="testForm.Designer.vb">
+      <DependentUpon>testForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="testForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolsCountIconsResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToolsCountIconsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeVersion\Pages\UpgradeFileSystem_Converting.Designer.vb">
+      <DependentUpon>UpgradeFileSystem_Converting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeVersion\Pages\UpgradeFileSystem_Converting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpgradeVersion\Pages\UpgradeFileSystem_SelectExpenses.Designer.vb">
+      <DependentUpon>UpgradeFileSystem_SelectExpenses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeVersion\Pages\UpgradeFileSystem_SelectExpenses.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpgradeVersion\Pages\UpgradeFileSystem_WelcomeToNewVersion.Designer.vb">
+      <DependentUpon>UpgradeFileSystem_WelcomeToNewVersion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeVersion\Pages\UpgradeFileSystem_WelcomeToNewVersion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpgradeVersion\UpgradeFileSystemDialog.Designer.vb">
+      <DependentUpon>UpgradeFileSystemDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeVersion\UpgradeFileSystemDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XpegCountForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XpegCountForm.Designer.vb">
+      <DependentUpon>XpegCountForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BlockInformationIconsResource.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BlockInformationIconsResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\Change Values Dialogs\ChangeDateDialog.resx">
+      <DependentUpon>ChangeDateDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\DeleteExpenseConfirmDialog.resx">
+      <DependentUpon>DeleteExpenseConfirmDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\Plots\SimplePayPlotDialog.resx">
+      <DependentUpon>SimplePayPlotDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContextMenuStatusPlotIconsResource.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ContextMenuStatusPlotIconsResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Count Tools\CountCategorySelector.resx">
+      <DependentUpon>CountCategorySelector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Count Tools\CountLoading.resx">
+      <DependentUpon>CountLoading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Count Tools\CountTextBox.resx">
+      <DependentUpon>CountTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditCards\NewCreditCardDialog.resx">
+      <DependentUpon>NewCreditCardDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardtIconsResource.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DashboardtIconsResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FeedBackDialog.resx">
+      <DependentUpon>FeedBackDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectColorDialog.resx">
+      <DependentUpon>SelectColorDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectCreditCardDialog.resx">
+      <DependentUpon>SelectCreditCardDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectExpenseCategoryDialog.resx">
+      <DependentUpon>SelectExpenseCategoryDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectIconDialog.resx">
+      <DependentUpon>SelectIconDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\Change Values Dialogs\ChangeNameDialog.resx">
+      <DependentUpon>ChangeNameDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\Change Values Dialogs\NewCommentDialog.resx">
+      <DependentUpon>NewCommentDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\CustomQuickMenuDialog.resx">
+      <DependentUpon>CustomQuickMenuDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\ListItems\BlockInformationsControl.resx">
+      <DependentUpon>BlockInformationsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\ListItems\CommentItemControl.resx">
+      <DependentUpon>CommentItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\ListItems\CreditCardItemList.resx">
+      <DependentUpon>CreditCardItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\ListItems\ExpenseBlockItemControl.resx">
+      <DependentUpon>ExpenseBlockItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\ListItems\ExpenseCategoryItemControl.resx">
+      <DependentUpon>ExpenseCategoryItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\ListItems\ExpenseCategoryListItemControl.resx">
+      <DependentUpon>ExpenseCategoryListItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\ListItems\HistoricPaymentItemControl.resx">
+      <DependentUpon>HistoricPaymentItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\ListItems\PlotItemControl.resx">
+      <DependentUpon>PlotItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\Plots\ViewCommentDialog.resx">
+      <DependentUpon>ViewCommentDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\Plots\AddNewPlotDialog.resx">
+      <DependentUpon>AddNewPlotDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\Plots\PayPlotDialog.resx">
+      <DependentUpon>PayPlotDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\Plots\ViewPlotSelectedDialog.resx">
+      <DependentUpon>ViewPlotSelectedDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\ViewExpenseForm.resx">
+      <DependentUpon>ViewExpenseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiltersHome.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FiltersHome.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstUseDialog.resx">
+      <DependentUpon>FirstUseDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstUse\SlideShowForm.resx">
+      <DependentUpon>SlideShowForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstUse\SlidesPages\SlideShow01.resx">
+      <DependentUpon>SlideShow01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstUse\SlidesPages\SlideShow02.resx">
+      <DependentUpon>SlideShow02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstUse\SlidesPages\SlideShow03.resx">
+      <DependentUpon>SlideShow03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstUse\SlidesPages\SlideShow04.resx">
+      <DependentUpon>SlideShow04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStyleImagesResource.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FormStyleImagesResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Form\DashboardsGraphicsDialog.resx">
+      <DependentUpon>DashboardsGraphicsDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Form\Pages\HomeCount_DashboardPage_Control.resx">
+      <DependentUpon>HomeCount_DashboardPage_Control.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Form\ViewModes\BlocksViewModeHome.resx">
+      <DependentUpon>BlocksViewModeHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Form\ViewModes\CalendarViewModeHome.resx">
+      <DependentUpon>CalendarViewModeHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Form\ViewModes\MonthsLabelsForCalendarMode.resx">
+      <DependentUpon>MonthsLabelsForCalendarMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CategoryIconList.resx">
+      <DependentUpon>CategoryIconList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CategoryIconsSeparatorControl.resx">
+      <DependentUpon>CategoryIconsSeparatorControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ColorSelectItemControl.resx">
+      <DependentUpon>ColorSelectItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\IconSelectItemControl.resx">
+      <DependentUpon>IconSelectItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\LabelInControl.resx">
+      <DependentUpon>LabelInControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\LogItemList.resx">
+      <DependentUpon>LogItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MenuHome\MenuItemCount.resx">
+      <DependentUpon>MenuItemCount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\QuickOptionExpenseButton.resx">
+      <DependentUpon>QuickOptionExpenseButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\SelectViewFilterItemListControl.resx">
+      <DependentUpon>SelectViewFilterItemListControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\TabPage\TabPageButton.resx">
+      <DependentUpon>TabPageButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingIconsResource.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoadingIconsResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCountIconsResource.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MenuCountIconsResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuHome.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MenuHome.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpCenter\HelpCenterForm.resx">
+      <DependentUpon>HelpCenterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpCenter\ListItens\QuestionHelpItemList.resx">
+      <DependentUpon>QuestionHelpItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpCenter\ListItens\HelpCategoryItemList.resx">
+      <DependentUpon>HelpCategoryItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpCenter\ListItens\TopicItemList.resx">
+      <DependentUpon>TopicItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpCenter\Pages\ViewQuestionsOfTopicSelectedControl.resx">
+      <DependentUpon>ViewQuestionsOfTopicSelectedControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpCenter\Pages\ViewTopicsOfCategorySelectedControl.resx">
+      <DependentUpon>ViewTopicsOfCategorySelectedControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpCenter\ViewHelpDialog.resx">
+      <DependentUpon>ViewHelpDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informations\DonateDialog.resx">
+      <DependentUpon>DonateDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informations\AboutSoftwareDialog.resx">
+      <DependentUpon>AboutSoftwareDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\ListItems\ExpensePlotItemControl.resx">
+      <DependentUpon>ExpensePlotItemControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlidesImages.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SlidesImages.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Software Settings\SettingsCountDialog.resx">
+      <DependentUpon>SettingsCountDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\Change Values Dialogs\ChangeMaturityDayDialog.resx">
+      <DependentUpon>ChangeMaturityDayDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\Change Values Dialogs\ChangePlotValueDialog.resx">
+      <DependentUpon>ChangePlotValueDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\Change Values Dialogs\DescriptionPlotDialog.resx">
+      <DependentUpon>DescriptionPlotDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense\NewExpenseDialog.resx">
+      <DependentUpon>NewExpenseDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MenuItemListControl.resx">
+      <DependentUpon>MenuItemListControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informations\NewsInSoftwareDialog.resx">
+      <DependentUpon>NewsInSoftwareDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testForm.resx">
+      <DependentUpon>testForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolsCountIconsResource.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ToolsCountIconsResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpgradeVersion\Pages\UpgradeFileSystem_Converting.resx">
+      <DependentUpon>UpgradeFileSystem_Converting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpgradeVersion\Pages\UpgradeFileSystem_SelectExpenses.resx">
+      <DependentUpon>UpgradeFileSystem_SelectExpenses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpgradeVersion\Pages\UpgradeFileSystem_WelcomeToNewVersion.resx">
+      <DependentUpon>UpgradeFileSystem_WelcomeToNewVersion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpgradeVersion\UpgradeFileSystemDialog.resx">
+      <DependentUpon>UpgradeFileSystemDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XpegCountForm.resx">
+      <DependentUpon>XpegCountForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="XpegCountSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>XpegCountSettings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Password_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#User_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#User_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Password_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpandPlot_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpandPlot_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Category_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Value_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ixon#Amount_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Calendar_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ValueToPay_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#DateFinally_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#During_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ChangeValuePlot_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ChangeMaturityDay_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ChangeMaturityDay_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ChangeValuePlot_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#DeletePlot_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Comments_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Menu_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#BackYear_Normal_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#BackYear_Enter_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#BackYear_Down_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#NextYear_Down_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#NextYear_Enter_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#NextYear_Normal_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuApp_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuApp_Enter_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuApp_Enter_28x281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#MenuApp_Down_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Dashboard_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Settings_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#CheckForUpdates_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Informations_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Close_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#AddExpense_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotPaid_Normal_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotPaid_Enter_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotPaid_Selected_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotPaid_Down_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotNoPaid_Down_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotNoPaid_Enter_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotNoPaid_Normal_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotNoPaid_Selected_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotNoPaid_Normal_24x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotWaiting_Normal_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotWaiting_Down_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotWaiting_Enter_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotWaiting_Selected_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotLate_Normal_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotLate_Selected_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leo_valcarenghi_nametag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotLate_Down_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ExpensePlotLate_Enter_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ModeView_Blocks_Down_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ModeView_Blocks_Enter_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ModeView_Blocks_Normal_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ModeView_Blocks_Selected_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ModeView_Calendar_Down_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ModeView_Calendar_Enter_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ModeView_Calendar_Normal_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ModeView_Calendar_Selected_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Category_Money_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#BlockModeFilter_Down_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#BlockModeFilter_Enter_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#BlockModeFilter_Normal_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#BlockModeFilter_Selected_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#SelectViewFilter_NoFilter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Categorys_28x28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ChangeExpenseName_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#HappyEmoju_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ChangeColor_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#AddPlot_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#RemovePlot_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#Filed_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#DeleteExpense_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#CategoryExpense_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#WhyEmoji_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstUse_DashBoard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstUse_MenuCount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstUser_ModeCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstUse_ModeBlocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstUse_SelectColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstUse_SelectIcons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstUse_ViewExpense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#InclueValue_20x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon#ValuePaid_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-microsoft-store-computer-software-store-icon-5ae60255b68995.2918199115250233177477.jpg" />
+    <None Include="Resources\MicrosoftStoreLogo.png" />
+    <None Include="Resources\IconMenu#AddCreditCard_28x28.png" />
+    <None Include="Resources\IconMenu#AddExpense_28x28.png" />
+    <None Include="Resources\IconMenu#Categorys_28x28.png" />
+    <None Include="Resources\IconMenu#CheckForUpdates_28x28.png" />
+    <None Include="Resources\IconMenu#Close_28x28.png" />
+    <None Include="Resources\IconMenu#Dashboard_28x28.png" />
+    <None Include="Resources\IconMenu#Informations_28x28.png" />
+    <None Include="Resources\IconMenu#Settings_28x28.png" />
+    <None Include="Resources\Icon#Dashboard_ValuePaid_24x24.png" />
+    <None Include="Resources\Icon#Dashboard_ValuePaid_30x30.png" />
+    <None Include="Resources\Icon#Dashboard_RestToPay_30x30.png" />
+    <None Include="Resources\Icon#Dashboard_Expenses_30x30.png" />
+    <None Include="Resources\Icon#Dashboard_CreditCard_30x30.png" />
+    <None Include="Resources\IconMenu#MenuBtn_28x28.png" />
+    <None Include="Resources\IconStatus#Status_20x20.png" />
+    <None Include="Resources\Icon#Porcentage_32x32.png" />
+    <None Include="Resources\IconMenu#SettingsCount_28x28.png" />
+    <None Include="Resources\Icon#Categoryzar_24x24.png" />
+    <None Include="Resources\Icon#CreditCard_32x32.png" />
+    <None Include="Resources\insta_xpegcount.png" />
+    <None Include="Resources\StyleImage_Calendar_500px.png" />
+    <None Include="Resources\StyleImage_Money_500px.png" />
+    <None Include="Resources\StyleImage_Link_500px.png" />
+    <None Include="Resources\StyleImage_Expense_500px.png" />
+    <None Include="Resources\StyleImage_Custom_500px.png" />
+    <None Include="Resources\Loading_8.png" />
+    <None Include="Resources\Loading_1.png" />
+    <None Include="Resources\Loading_2.png" />
+    <None Include="Resources\Loading_3.png" />
+    <None Include="Resources\Loading_4.png" />
+    <None Include="Resources\Loading_5.png" />
+    <None Include="Resources\Loading_6.png" />
+    <None Include="Resources\Loading_7.png" />
+    <None Include="Resources\icon_TotalValue_32px.png" />
+    <None Include="Resources\icon_TotalValue_512px.png" />
+    <None Include="Resources\icon_TotalValueNoIncludes_512px.png" />
+    <None Include="Resources\IconeMenu_AppMobile_28x28.png" />
+    <None Include="Resources\Icon_RenameExpense_20x20.png" />
+    <None Include="Resources\Icon_ChangeDescription_20x20.png" />
+    <None Include="Resources\Icon_ChangeIcon_20x20.png" />
+    <None Include="Resources\Icon_QuickMenu_20x20.png" />
+    <None Include="Resources\Icon_ModeViewBlocks_20x20.png" />
+    <None Include="Resources\Icon_ModeViewList_20x20.png" />
+    <None Include="Resources\Icon_AddPlot_20x20.png" />
+    <None Include="Resources\Icon_Search_20x20.png" />
+    <None Include="Resources\Icon_PinInHome_20x20.png" />
+    <None Include="Resources\Icon_EditLocation_20x20.png" />
+    <None Include="Resources\Icon_AddTag_20x20.png" />
+    <None Include="Resources\Icon_DeletePlot_20x20.png" />
+    <None Include="Resources\Icon_LinkWithCreditCard_20x20.png" />
+    <None Include="Resources\Icon_EditPlot_20x20.png" />
+    <None Include="Resources\Icon_UnPin_20x20.png" />
+    <None Include="Resources\Icon_BlockCategory_100x100.png" />
+    <None Include="Resources\Icon_BlockDuration_100x100.png" />
+    <None Include="Resources\Icon_BlockNoIncludes_100x100.png" />
+    <None Include="Resources\Icon_BlockValuePaid_100x100.png" />
+    <None Include="Resources\Icon_BlockInterest_100x100.png" />
+    <None Include="Resources\Icon_BlockLowPrice_100x100.png" />
+    <None Include="Resources\Icon_BlockLocation_100x100.png" />
+    <None Include="Resources\Icon_BlockStartDate_100x100.png" />
+    <None Include="Resources\Icon_BlockEndDate_100x100.png" />
+    <None Include="Resources\Icon_BlockTotal_100x100.png" />
+    <None Include="Resources\Icon_BlockRestToPay_100x100.png" />
+    <None Include="Resources\Icon_BlockCountPlots_100x100.png" />
+    <None Include="Resources\Icon_BlockStatus_100x100.png" />
+    <None Include="Resources\Icon_BlockCardLink_100x100.png" />
+    <None Include="Resources\Icon_Delete_20x20.png" />
+    <None Include="Resources\Icon_Ok_20x20.png" />
+    <Content Include="CountIcon.ico" />
+    <None Include="Resources\Icon_Developer_34px.png" />
+    <None Include="Resources\Icon_Fonts_34px.png" />
+    <None Include="Resources\Icon_Icons_34px.png" />
+    <None Include="Resources\Icon_Version_34px.png" />
+    <None Include="Resources\Icon_Site_30px.png" />
+    <None Include="Resources\Icon_Instagram_30px.png" />
+    <None Include="Resources\Icon_LogVersion_34px.png" />
+    <None Include="Resources\Icon_SelectAll_20px.png" />
+    <None Include="Resources\Icon_SelectNone_20px.png" />
+    <None Include="Resources\Icon_Pay_20px.png" />
+    <None Include="Resources\icon_Status_20px.png" />
+    <None Include="Resources\Icon_PayPlot_20px.png" />
+    <None Include="Resources\dark_shadow_left_to_right_layers_by_transparent_layers_dc10i2v-fullview.png" />
+    <None Include="Resources\Icon_CheckPlot_32px.png" />
+    <None Include="Resources\Icon_BlockExpenseName_100x100.png" />
+    <None Include="Resources\Icon_Instagram_34px.png" />
+    <None Include="Resources\Icon_Email_34px.png" />
+    <None Include="Resources\Icon_Linkedin_34px.png" />
+    <None Include="Resources\Icon_GitHub_34px.png" />
+    <None Include="Resources\Icon_VisualBasic_34px.png" />
+    <None Include="Resources\Icon_HTML5_34px.png" />
+    <None Include="Resources\Icon_CSS3_34px.png" />
+    <None Include="Resources\Icon_Git_34px.png" />
+    <None Include="Resources\Icon_VisualStudio_34px.png" />
+    <None Include="Resources\Icon_JavaScript_34px.png" />
+    <None Include="Resources\Icon_Help_28px.png" />
+    <None Include="Resources\AddCreditCard_30px.png" />
+    <None Include="Resources\Help_30px.png" />
+    <None Include="Resources\Info_30px.png" />
+    <None Include="Resources\NewExpense_30px.png" />
+    <None Include="Resources\Settings_30px.png" />
+    <None Include="Resources\Exit_30px.png" />
+    <None Include="Resources\Dashboard_30px.png" />
+    <None Include="Resources\Menu_30px.png" />
+    <None Include="Resources\NewExpense_30px1.png" />
+    <None Include="Resources\AddCreditCard_30px1.png" />
+    <None Include="Resources\Settings_30px1.png" />
+    <None Include="Resources\Help_30px1.png" />
+    <None Include="Resources\Info_30px1.png" />
+    <None Include="Resources\Exit_30px1.png" />
+    <None Include="Resources\Menu_30px1.png" />
+    <None Include="Resources\ExpensesArchive_30px.png" />
+    <None Include="Resources\FeedBack_30px.png" />
+    <None Include="Resources\Icon_Place_20x20.png" />
+    <None Include="Resources\Icon_CustomQuickMenu_20x20.png" />
+    <None Include="Resources\Icon_LinkCard_20x20.png" />
+    <None Include="Resources\Donate_30px.png" />
+    <None Include="Resources\WalletBitcoin.png" />
+    <None Include="Resources\CloseFilters_20px.png" />
+    <None Include="Resources\ExpandAll_20px.png" />
+    <None Include="Resources\CalendarMode_24px.png" />
+    <None Include="Resources\BlocksMode_24px.png" />
+    <None Include="Resources\Icon_ChangeDate_20px.png" />
+    <None Include="Resources\Icon_ChangeIcon_20px.png" />
+    <None Include="Resources\Icon_Remove_20px.png" />
+    <None Include="Resources\Icon_ChangeSets_20px.png" />
+    <None Include="Resources\Icon_ListViewMode_20px.png" />
+    <None Include="Resources\Icon_BlocksBiewMode_20px.png" />
+    <None Include="Resources\Icon_Options_20px.png" />
+    <None Include="Resources\Icon_ViewMode_20px.png" />
+    <None Include="Resources\Icon_AllowPartialPayment_20px.png" />
+    <None Include="Resources\Icon_AllowColorInHeader_20px.png" />
+    <None Include="Resources\BuyDate_100px.png" />
+    <None Include="Resources\NewDashboard.png" />
+    <None Include="Resources\CalendarMode.png" />
+    <Content Include="xpeg_count_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\NewFolder1\" />
+    <Folder Include="system\Languages\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

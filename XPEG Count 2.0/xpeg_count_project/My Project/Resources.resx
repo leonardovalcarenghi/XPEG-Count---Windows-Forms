@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Icon#DeleteExpense_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#DeleteExpense_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotPaid_Enter_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotPaid_Enter_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_GitHub_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_GitHub_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Fonts_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Fonts_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Instagram_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Instagram_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#MenuApp_Enter_28x28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#MenuApp_Enter_28x28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Place_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Place_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leo_valcarenghi_nametag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leo_valcarenghi_nametag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#Value_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#Value_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slide5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Slide5.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_shadow_left_to_right_layers_by_transparent_layers_dc10i2v-fullview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark_shadow_left_to_right_layers_by_transparent_layers_dc10i2v-fullview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#SelectViewFilter_NoFilter_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#SelectViewFilter_NoFilter_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Linkedin_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Linkedin_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ChangeExpenseName_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ChangeExpenseName_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#User_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#User_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotLate_Selected_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotLate_Selected_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#BlockModeFilter_Selected_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#BlockModeFilter_Selected_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#CategoryExpense_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#CategoryExpense_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ModeView_Blocks_Down_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ModeView_Blocks_Down_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_VisualStudio_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_VisualStudio_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WalletBitcoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WalletBitcoin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Options_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Options_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#BlockModeFilter_Down_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#BlockModeFilter_Down_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotPaid_Selected_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotPaid_Selected_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_CustomQuickMenu_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_CustomQuickMenu_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#DateFinally_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#DateFinally_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Instagram_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Instagram_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotNoPaid_Selected_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotNoPaid_Selected_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Git_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Git_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#MenuApp_Enter_28x281" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#MenuApp_Enter_28x281.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_LogVersion_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_LogVersion_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#RemovePlot_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#RemovePlot_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MicrosoftStoreLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MicrosoftStoreLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#DeletePlot_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#DeletePlot_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ValueToPay_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ValueToPay_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ModeView_Blocks_Selected_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ModeView_Blocks_Selected_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ValuePaid_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ValuePaid_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotWaiting_Selected_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotWaiting_Selected_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Developer_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Developer_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ModeView_Calendar_Selected_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ModeView_Calendar_Selected_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpandPlot_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpandPlot_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotNoPaid_Enter_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotNoPaid_Enter_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#During_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#During_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotNoPaid_Normal_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotNoPaid_Normal_24x241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotWaiting_Enter_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotWaiting_Enter_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ModeView_Blocks_Normal_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ModeView_Blocks_Normal_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_ListViewMode_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_ListViewMode_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Version_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Version_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#BlockModeFilter_Normal_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#BlockModeFilter_Normal_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ChangeValuePlot_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ChangeValuePlot_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#NextYear_Down_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#NextYear_Down_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ChangeMaturityDay_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ChangeMaturityDay_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#Comments_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#Comments_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#Calendar_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#Calendar_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Icons_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Icons_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ChangeValuePlot_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ChangeValuePlot_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#Password_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#Password_64x64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#Password_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#Password_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_CSS3_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_CSS3_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotWaiting_Normal_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotWaiting_Normal_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_ChangeSets_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_ChangeSets_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ChangeColor_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ChangeColor_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_ViewMode_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_ViewMode_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_JavaScript_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_JavaScript_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_ChangeDate_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_ChangeDate_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotNoPaid_Down_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotNoPaid_Down_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Email_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Email_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ModeView_Calendar_Enter_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ModeView_Calendar_Enter_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#HappyEmoju_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#HappyEmoju_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#BackYear_Enter_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#BackYear_Enter_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ModeView_Calendar_Down_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ModeView_Calendar_Down_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ModeView_Calendar_Normal_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ModeView_Calendar_Normal_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#WhyEmoji_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#WhyEmoji_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#NextYear_Enter_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#NextYear_Enter_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slide2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Slide2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#Category_Money_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#Category_Money_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotWaiting_Down_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotWaiting_Down_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotLate_Enter_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotLate_Enter_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#Menu_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#Menu_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#InclueValue_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#InclueValue_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#User_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#User_64x64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpandPlot_18x18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpandPlot_18x18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotLate_Down_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotLate_Down_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Remove_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Remove_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_PayPlot_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_PayPlot_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Site_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Site_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#Filed_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#Filed_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotPaid_Down_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotPaid_Down_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#MenuApp_28x28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#MenuApp_28x28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#AddPlot_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#AddPlot_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_VisualBasic_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_VisualBasic_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotPaid_Normal_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotPaid_Normal_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ExpensePlotLate_Normal_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ExpensePlotLate_Normal_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_ChangeIcon_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_ChangeIcon_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slide4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Slide4.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#BackYear_Normal_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#BackYear_Normal_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#BackYear_Down_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#BackYear_Down_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insta_xpegcount" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insta_xpegcount.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#NextYear_Normal_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#NextYear_Normal_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ModeView_Blocks_Enter_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ModeView_Blocks_Enter_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ixon#Amount_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ixon#Amount_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#ChangeMaturityDay_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#ChangeMaturityDay_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_LinkCard_20x20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_LinkCard_20x20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_CheckPlot_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_CheckPlot_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_BlocksBiewMode_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_BlocksBiewMode_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Help_28px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_Help_28px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_HTML5_34px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_HTML5_34px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#MenuApp_Down_28x28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#MenuApp_Down_28x28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_AllowPartialPayment_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_AllowPartialPayment_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slide3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Slide3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#BlockModeFilter_Enter_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#BlockModeFilter_Enter_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slide1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Slide1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon#Category_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon#Category_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_AllowColorInHeader_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_AllowColorInHeader_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
